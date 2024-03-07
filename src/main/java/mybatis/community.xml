@@ -50,7 +50,7 @@
  	</select>
  	
  	<update id="setReadCount" parameterType="long">
- 		UPDATE community 
+ 		UPDATE community
 		SET 
 			READCOUNT = READCOUNT +1 
 		WHERE 
