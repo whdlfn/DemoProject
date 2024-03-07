@@ -52,7 +52,7 @@
 		</div>
 </div>
 <script>
-	/* 쿠키에 저장된 로그인 실패 정보 확인 */
+	/* 쿠키에 저장된 로그인 실패 정보 확인 : el에 쿠기 객체cookie를 지원되므로 해당 쿠기 이름 지정하여 사용함*/
 	console.log('${cookie.incorrect}')
 	if('${cookie.incorrect.value}'==='y') {
 		document.getElementById('incorrect').style.display='inline-block';
