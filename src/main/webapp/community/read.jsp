@@ -53,7 +53,7 @@
 					<!-- textarea에 입력한 엔터는 \n db에도 \n으로 저장됩니다.
 					     브라우저 출력은 줄바꿈은 <br> 태그 해결1) pre 태그, 해결  2) \n을 <br>로 대치-->	
 					<li>
-						<pre><c:out value="${vo.content}"/></pre>
+<textarea rows="20" disabled="disabled" style="background-color:#f3f3f3;font-size:inherit;"><c:out value="${vo.content}"/></textarea>
 					</li>				
 				</ul>
 			</li>
