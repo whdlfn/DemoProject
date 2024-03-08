@@ -11,6 +11,9 @@
 	<link rel="stylesheet" href="../css/book.css" />
 	<link href="//cdn.quilljs.com/1.3.6/quill.snow.css" rel="stylesheet">
 	<script src="//cdn.quilljs.com/1.3.6/quill.js"></script>
+	<style type="text/css">
+		input { width: 80%;}
+	</style>
 </head>
 	<body class="is-preload">
 		<div id="page-wrapper">
