@@ -1,5 +1,4 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
-<<<<<<< HEAD
 	pageEncoding="UTF-8"%>
 <!DOCTYPE html>
 <html>
@@ -85,8 +84,6 @@
 	<script src="../assets/js/main.js"></script>
 	<script src="../js/nav.js"></script>
 	<script src="../js/editor.js"></script>
-=======
-    pageEncoding="UTF-8"%>
 <!DOCTYPE html>
 <html>
 <head>
@@ -173,6 +170,5 @@
 			<script src="../assets/js/main.js"></script>
 			<script src="../js/nav.js"></script>
 			<script src="../js/editor.js"></script>
->>>>>>> branch 'main' of https://github.com/kimsohee-around/DemoProject.git
 </body>
 </html>
