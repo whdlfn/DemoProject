@@ -173,6 +173,7 @@
 								return
 							}
 
+<<<<<<< HEAD
 							let yn
 							if ('${user.userid}' == '') {
 								yn = confirm('구매는 로그인이 필요합니다. 로그인 하시겠습니까?')
@@ -205,4 +206,36 @@
 						})
 	</script>
 </body>
+=======
+			let yn
+			if('${user.userid}'==''){
+				yn=confirm('구매는 로그인이 필요합니다. 로그인 하시겠습니까?')
+				/* 로그인 후 글쓰기로 돌아가기 */
+				if(yn) {
+					sessionStorage.setItem('back', 'book/bookcase');
+					location.href='../login'  // 로그인 후 글쓰기 url로 redirect 하기 위한 파라미터
+				}
+			}else {
+			
+			const datas = target.getAttribute("data-all")
+			const arr = datas.split(",");
+			obj.bcode = arr[0];
+			obj.title = arr[1];
+			obj.price = arr[2];
+			obj.saleuser = arr[3];
+			
+			const now = new Date();
+			orderid = now.toISOString().replace(/\D/g, '').slice(2, 14);
+	//		const obj = {bcode :arr[0] ,title:arr[1] , price :arr[2] , saleuser:arr[3] }
+			document.querySelector(".modal-body #saleuser").innerHTML = obj.saleuser
+			document.querySelector(".modal-body #title").innerHTML = obj.title
+			document.querySelector(".modal-body #price").innerHTML = Number(obj.price).toLocaleString("ko-KR")
+			modal.show();
+			tossPayInit();
+			}
+		})
+		
+</script>			
+	</body>
+>>>>>>> branch 'main' of https://github.com/kimsohee-around/DemoProject.git
 </html>
