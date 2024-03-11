@@ -53,7 +53,7 @@ public class BookCasePayRequestSuccessController implements Controller {
         //amount , orderId도 필요함.
         
         // Authorization 헤더 생성
-        String secretKey = "test_sk_EP59LybZ8BKZ25EdLnWJ36GYo7pR";
+        String secretKey = "";
         String authorizationHeader = createAuthorizationHeader(secretKey);
 
         // JSON 데이터 생성
