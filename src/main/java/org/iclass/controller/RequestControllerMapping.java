@@ -3,6 +3,8 @@ package org.iclass.controller;
 import java.util.HashMap;
 import java.util.Map;
 
+import org.iclass.controller.book.BookCaseListController;
+import org.iclass.controller.book.BookCaseSaveController;
 import org.iclass.controller.book.BookCaseFormController;
 import org.iclass.controller.book.BookCaseListController;
 import org.iclass.controller.book.BookCaseSaveController;
@@ -60,20 +62,17 @@ public class RequestControllerMapping {
 		mapping.put(new RequestKeyValue("/book/bookcase","GET"), new BookCaseListController());
 //		mapping.put(new RequestKeyValue("/pay/success","GET"), new BookCasePayRequestSuccessController());
 //		mapping.put(new RequestKeyValue("/pay/fail","GET"), new BookCasePayRequestFailController());
-
 		
 		
 		mapping.put(new RequestKeyValue("/book/form","GET"), new BookCaseFormController());
 		mapping.put(new RequestKeyValue("/book/save","POST"), new BookCaseSaveController());
 		
 		
-
 
 		//추가
 		mapping.put(new RequestKeyValue("/book/form","GET"), new BookCaseFormController());
 		mapping.put(new RequestKeyValue("/book/save","POST"), new BookCaseSaveController());
 		
-//>>>>>>> branch 'main' of https://github.com/kimsohee-around/DemoProject.git
 		//공지사항(검색기능)
 //		mapping.put(new RequestKeyValue("/notice/list", "GET"), new NoticeListController());
 //		mapping.put(new RequestKeyValue("/notice/read", "GET"), new NoticeReadController());

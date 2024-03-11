@@ -50,6 +50,7 @@ public class BookcaseDao {
 		return result;
 	}
 	
+
 	public  int register(BookcaseBook book) {
 		SqlSession sqlSession = SqlSessionBean.getSession();
 		int result = sqlSession.insert("bookcase.register",book);
