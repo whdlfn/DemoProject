@@ -3,10 +3,20 @@ package org.iclass.controller;
 import java.util.HashMap;
 import java.util.Map;
 
+<<<<<<< HEAD
 import org.iclass.controller.book.BookCaseListController;
 import org.iclass.controller.book.BookCaseSaveController;
+=======
+import org.iclass.controller.book.BookCaseFormController;
+import org.iclass.controller.book.BookCaseListController;
+import org.iclass.controller.book.BookCaseSaveController;
+import org.iclass.controller.community.CommentsController;
+import org.iclass.controller.community.DeleteController;
+>>>>>>> branch 'main' of https://github.com/kimsohee-around/DemoProject.git
 import org.iclass.controller.community.ListController;
 import org.iclass.controller.community.ReadController;
+import org.iclass.controller.community.UpdateController;
+import org.iclass.controller.community.UpdateViewController;
 import org.iclass.controller.community.WriteController;
 import org.iclass.controller.community.WriteViewController;
 import org.iclass.controller.member.LoginActionController;
@@ -22,13 +32,14 @@ public class RequestControllerMapping {
 		mapping.put(new RequestKeyValue("/community/list", "GET"), new ListController() );
 		mapping.put(new RequestKeyValue("/community/write","GET"), new WriteViewController() );
 		mapping.put(new RequestKeyValue("/community/write","POST"), new WriteController() );
+
 //		//게시판 글 상세보기 ,수정하기,삭제하기
 
 		mapping.put(new RequestKeyValue("/community/read", "GET"), new ReadController() );
-//		mapping.put(new RequestKeyValue("/community/update","GET"), new UpdateViewController() );
-//		mapping.put(new RequestKeyValue("/community/update","POST"), new UpdateController() );
-//		mapping.put(new RequestKeyValue("/community/delete","GET"), new DeleteController() );		//오류 처리 위해 POST로 변경
-//		mapping.put(new RequestKeyValue("/community/comments","POST"), new CommentsController());
+		mapping.put(new RequestKeyValue("/community/update","GET"), new UpdateViewController() );
+		mapping.put(new RequestKeyValue("/community/update","POST"), new UpdateController() );
+		mapping.put(new RequestKeyValue("/community/delete","GET"), new DeleteController() );		//오류 처리 위해 POST로 변경
+		mapping.put(new RequestKeyValue("/community/comments","POST"), new CommentsController());
 		//회원가입
 //		mapping.put(new RequestKeyValue("/join","GET"), new MemberJoinController());
 //		mapping.put(new RequestKeyValue("/join","POST"), new MemberSaveController());
@@ -54,6 +65,7 @@ public class RequestControllerMapping {
 		mapping.put(new RequestKeyValue("/book/bookcase","GET"), new BookCaseListController());
 //		mapping.put(new RequestKeyValue("/pay/success","GET"), new BookCasePayRequestSuccessController());
 //		mapping.put(new RequestKeyValue("/pay/fail","GET"), new BookCasePayRequestFailController());
+<<<<<<< HEAD
 		
 		
 		mapping.put(new RequestKeyValue("/book/form","GET"), new BookCaseFormController());
@@ -61,6 +73,12 @@ public class RequestControllerMapping {
 		
 		
 
+=======
+		//추가
+		mapping.put(new RequestKeyValue("/book/form","GET"), new BookCaseFormController());
+		mapping.put(new RequestKeyValue("/book/save","POST"), new BookCaseSaveController());
+		
+>>>>>>> branch 'main' of https://github.com/kimsohee-around/DemoProject.git
 		//공지사항(검색기능)
 //		mapping.put(new RequestKeyValue("/notice/list", "GET"), new NoticeListController());
 //		mapping.put(new RequestKeyValue("/notice/read", "GET"), new NoticeReadController());
