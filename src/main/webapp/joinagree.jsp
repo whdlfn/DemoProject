@@ -11,7 +11,7 @@
 </head>
 <body>
 <div class="join">
-<!--        <div id="chkPop" class="popup">
+       <div id="chkPop" class="popup">
         <div class="pop-wrap">
             <div class="pop-title">
                 <h6></h6>
@@ -19,7 +19,7 @@
             </div>
             <div class="pop-cont"></div>
         </div>
-    	</div> -->
+    	</div>
     	<div class="con center">
         <ul class="join-title">
             <li>
