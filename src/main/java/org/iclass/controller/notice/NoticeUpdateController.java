@@ -32,7 +32,8 @@ public class NoticeUpdateController implements Controller {
 					idx = Integer.parseInt(temp);
 					NoticeDao dao = NoticeDao.getInstance();
 					Notice vo = dao.read(idx);
-					
+					//필터 적용하기 전에 admin 검사하는 부분임. //필터 적용 전후를 확인하기 위해 주석처리 필요
+					//모든 admin 페이지에 이 코드를 추가하는 것 대신에 필터를 사용하는 것이당
 					if(vo==null || !user.getUserid().equals("admin")) throw new RuntimeException();
 					request.setAttribute("vo", vo);				
 					
